@@ -167,4 +167,5 @@ fig = plt.figure(figsize=(25, 4))
 for idx in np.arange(20):
   ax = fig.add_subplot(2, 10, idx+1, xticks=[], yticks=[])
   plt.imshow(image_convert(images[idx]))
-  ax.set_title("{} {}".format(str(pred[idx].item()),str(labels[idx].item())), color=("green" if pred[idx]==lables[idx] else "red"))
+  ax.set_title("{} {}".format(str(pred[idx].item()), str(
+      labels[idx].item())), color=("green" if pred[idx] == labels[idx] else "red"))
